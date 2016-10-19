@@ -4,8 +4,6 @@ import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
 
-import org.apache.log4j.BasicConfigurator;
-
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.HashMap;
@@ -22,7 +20,6 @@ public class HelloWorldSparkFreeMarkStyle {
 
     final Configuration configuration = new Configuration();
     configuration.setClassForTemplateLoading(HelloWorldSparkFreeMarkStyle.class, "/");
-    BasicConfigurator.configure();
     port(9000);
     get("/", (req, res) -> getFreeMarkTemplate(configuration)
     );

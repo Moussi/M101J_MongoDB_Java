@@ -1,4 +1,4 @@
-package com.mongodb.driver;
+package com.mongodb.manips;
 
 import com.mongodb.util.Helpers;
 
@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * Created by amoussi on 19/10/16.
  */
-public class DocumentTest {
+public class DocumentManip {
   public static void main(String[] args) {
     Document document = new Document()
         .append("str", "")

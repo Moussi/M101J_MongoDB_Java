@@ -1,4 +1,4 @@
-package com.mongodb.driver;
+package com.mongodb.manips;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientOptions;
@@ -8,7 +8,7 @@ import com.mongodb.ServerAddress;
 /**
  * Created by amoussi on 19/10/16.
  */
-public class driver {
+public class DriverManip {
   public static void main(String[] args) {
     // First Way to creat Mongo Client
     MongoClient client = new MongoClient(new ServerAddress("localhost", 27017));
