@@ -29,7 +29,7 @@ public class FindWithFilterProjectionManip {
     MongoClient client = new MongoClient();
 
     MongoDatabase db = client.getDatabase("course");
-    MongoCollection<Document> coll = db.getCollection("findWithFilterTest");
+    MongoCollection<Document> coll = db.getCollection("findWithFilterProjectionTest");
     coll.drop();
 
     //Define filter
