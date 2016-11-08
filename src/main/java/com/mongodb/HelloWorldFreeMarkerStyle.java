@@ -22,6 +22,7 @@ public class HelloWorldFreeMarkerStyle {
     Map<String, Object> helloMap = new HashMap<>();
     helloMap.put("name", "Moussi");
 
+
     try {
       Template template = configuration.getTemplate("hello.ftl");
       template.process(helloMap, sw);
